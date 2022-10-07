@@ -1,0 +1,131 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(204, 43%, 93%);
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    height: 100vh;
+
+}
+.container{
+    margin:  2rem auto;
+    width: 320px;
+    border-radius: 1.5rem;
+    -webkit-box-shadow: 0px 19px 22px -14px rgba(0, 0, 0, 1);
+-moz-box-shadow: 0px 19px 22px -14px rgba(0, 0, 0, 1);
+box-shadow: 0px 19px 22px -14px rgba(0, 0, 0, 1);
+}
+/*sections*/
+.community{
+    background-color: white;
+    padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+    color:hsl(218, 22%, 67%);
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+.community h2{
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+    font-size: 22px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.community span{
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+}
+.community p{
+    margin-bottom: 0;
+}
+.subscribtion{
+    background-color: hsl(179, 62%, 43%);
+    color: white;
+    padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+    border-bottom-left-radius:0;
+    
+}
+.subscribtion h2{
+    font-size: 22px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.price{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+.subscribtion span{
+    font-size: 16px;
+    color: hsl(204, 43%, 93%);
+    font-weight: 200;   
+}
+
+.btn{
+    background-color: hsl(71, 73%, 54%);
+    text-align: center;
+    padding: 0.8rem;
+    border-radius: 0.3rem;
+    margin: 1rem auto;
+    -webkit-box-shadow: 0px 19px 22px -14px rgba(0, 0, 0, 1);
+-moz-box-shadow: 0px 19px 22px -14px rgba(0, 0, 0, 1);
+box-shadow: 0px 19px 22px -14px rgba(0, 0, 0, 1);
+}
+
+.why{
+    background-color: hsl(179, 62%, 46%);
+    color:hsl(204, 43%, 93%);
+    padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+.why h2{
+    font-size: 22px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.why ul{
+    list-style: none;
+    text-align: left;
+    padding-left: 0;
+}
+/*responsivity settings*/
+@media only screen and (min-width:900px){
+    .container{
+        width: 800px;
+        margin: auto;
+        height: 70vh;
+        display:grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: minmax(100px,auto);
+        grid-template-areas:
+            "header header"
+            "content footer";
+    }
+    .community{
+        grid-area: header;
+        padding: 1.5rem 3.5rem 0rem 3.5rem;
+    }
+    .subscribtion{
+        grid-area: content;
+        border-bottom-left-radius: 1.5rem;
+        padding: 1.5rem 3.5rem 0rem 3.5rem;
+    }
+    .btn{margin-top: 2rem;
+        width: 80%;
+        
+    }
+    .why{
+        grid-area: footer;
+        border-bottom-left-radius:0;
+        padding: 1.5rem 3.5rem 0rem 3.5rem;
+    }
+}
+
